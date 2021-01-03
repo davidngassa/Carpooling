@@ -1,0 +1,19 @@
+{
+  "FilePath": "c:\\Users\\david.ngassa\\Documents\\Carpooling-v1.1\\CAR-POOLING\\Matc.Carpooling\\Matc.Carpooling.WebService\\Matc.Carpooling.WebService.csproj",
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 800
+  },
+  "RootNamespace": null,
+  "Documents": [],
+  "SerializationFormat": "0.2"
+}

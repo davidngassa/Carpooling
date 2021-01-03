@@ -1,0 +1,400 @@
+﻿h2 {
+    margin: auto;
+}
+
+/*#region All Scrollbar*/
+::-webkit-scrollbar {
+    width: 12px;
+    height: 120px;  
+}
+
+::-webkit-scrollbar-track {
+    border: 1px solid yellowgreen;
+}
+
+::-webkit-scrollbar-thumb {
+    background: yellowgreen;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #88ba1c;
+}
+/*#endregion All Scrollbar*/
+
+/*#region Login/Register Page*/
+
+/*#region input-data*/
+.input-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 14px;
+}
+
+.input-data input {
+    margin: 10px 0px;
+    padding: 10px;
+    border:1px solid transparent;
+    border-bottom: 1px solid yellowgreen;
+    outline: none;
+    color: #000;
+    font-family: 'Source Sans Pro', sans-serif;
+    transition: 0.5s ease;
+}
+
+.input-data input:focus {
+    background: rgba(161,161,161, 0.05);    
+}
+
+.input-data input::placeholder {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/*#endregion input-data*/
+
+/*#region register & login button*/
+
+/*#endregion register & login button*/
+
+/*#region Conditions Pop-Up*/
+#conditionsDiv {
+    float: right;
+    z-index: 1;
+    position: absolute;
+    height: 550px;
+    width: 500px;
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);;
+    padding: 10px;
+    border-radius: 10px;
+    background: white;
+    margin: auto;
+}
+
+#conditionsDiv .closeButton{
+    float: none;
+}
+ 
+#textcontainer {
+    position: absolute;
+    height: 500px;
+    width: 475px;
+    padding:0 10px;
+    border-radius: 5%;
+    margin-right: 10px;
+    overflow: auto;
+    background: white;
+    margin-top: 15px;
+}
+
+/*#endregion Conditions Pop-Up*/
+
+/*#endregion Login/Register Page*/
+
+/*#region Home Page*/
+/*#region View A Journey Pop-Up*/
+#HomeBookJourneyCheckpointDetailsDiv {
+    overflow: auto;
+    height: 100px;   
+    align-self:center;
+    justify-content:space-around;
+   margin: 0 auto;
+    width:90%;
+}
+
+#HomeBookJourneyDetailsContainer {
+    margin-top: 15px;
+    margin-right: 20px;
+    height: 80%;
+}
+/*#endregion View A Journey Pop-Up*/
+/*#region Book A Journey Pop-Up*/
+#bookJourneyPopUp{
+    height:30%;
+    border-radius:10px;
+}
+
+#selectDepartureDropBox, #selectDestinationDropBox {
+    width: 100%;
+}
+#bookingInputsContainer{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+
+#inputDepartureContainer, #inputDestinationContainer{
+    width:40%;
+}
+#continueBookJourneyButton{
+    margin-top:50px;
+}
+
+#bookJourneyPopUpCloseButton{
+    float:right;
+}
+/*#endregion Book A Journey Pop-Up*/
+/*#region View A Booking Pop-Up*/
+#HomeBookedJourneyDetailsContainer {
+    overflow: auto;
+    height: 80%
+}
+#BookedJourneyCheckpointDetailsDiv {
+    overflow: auto;
+    height: 100px;
+    align-self: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 90%;
+}
+#HomeBookedJourneyDetailsContainer {
+    height: 100%;
+    width:59%;
+}
+
+#HomeBookingDetailsContainer{
+    margin:auto 0;
+    height:30%;  
+    border:0.5px solid yellowgreen;
+    width:40%;
+}
+#cancelBookingButton{
+    margin-top:10px;
+}
+#bookingTitle {
+    margin:0;
+    margin-top:2px;
+}
+#bookingDetailsContainer {
+    text-align:left;
+}
+#bookedJourneyDetailsPopUp {
+    width: 600px;
+    height: 650px;
+}
+/*#endregion View A Booking Pop-Up*/
+/*#endregion Home Page*/
+
+/*#region My Account Page*/
+/*#region Edit Personal Details */
+#EditdetailsInputFieldsContainer, #EditPasswordInputFieldsContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+#editDetailsInputFields, #editPasswordInputFields {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+#editPasswordInputFields {
+    padding-top: 21px;
+    height: 65%;
+}
+
+#DetailsHeaderDiv {
+    text-align: center;
+}
+
+#passwordDiv{
+    margin-left:auto;
+}
+#editDetailsTitleContainer{
+    text-align:right;
+}
+/*#endregion Edit Personal Details*/
+/*#endregion My Account Page*/
+
+/*#region My Cars Page*/
+/*#region View Car PopUp*/
+#cancelUpdateButton {
+    margin-left: 0;
+    width: 40%;
+}
+#confirmUpdateCarButton {
+    margin-left: 20%;
+    width: 40%;
+}
+
+#carDetailsUpdateInfo {
+    margin-left: 20%;    
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#carDetailsTitles{
+    text-align:left;
+}
+
+#carDetailsInfo{
+    text-align:left;
+    margin-left:10%;
+}
+
+#viewCarDetailsContainer{
+    margin-top:30px;
+}
+/*#endregion View Car PopUp*/
+/*#region Add Car Pop-Up*/
+#addCarInputFields {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+/*#endregion Add Car Pop-Up*/
+/*#endregion My Cars Page*/
+
+/*#region My Journey Page*/
+/*#region Create Journey Pop-Up*/
+#createJourneyInputFieldsDiv {
+    height: 90%;
+    width: 95%;    
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+#createJourneyDiv{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+#createJourneyPopUp{
+    width:65%;
+    height:75%;
+    border-radius:20px;
+    padding: 15px;
+}
+#submitCreateJourneyButton{
+    width:30%;
+    align-self:center;
+}
+#createJourneyDetailsInputFields {
+    background-color: white;
+    height: 90%;
+    width: 60%;
+    margin: auto;
+    display:flex;
+    flex-direction:row;
+}
+#createJourneyCheckpointDetailsInputFields {
+    background-color: white;
+    height: 90%;
+    width: 30%;
+    margin: auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+}
+.journeyInputFieldsTitle{
+    text-align:left;
+}
+.inPageInputFields {
+    background-color: rgba(206, 206, 255, 0.1);
+    border: 0.5px solid yellowgreen;
+    font-size: 17px;
+    border-radius: 3px;
+    font: inherit;
+    padding-left: 10px;
+}
+#createJourneyDetailsInputFieldsDiv, #createJourneyDetailsInputFieldsTitleDiv {
+    height: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#selectCarDropBox {
+    width: 80%;
+}
+#selectDateDropBox {
+    width: 75%;
+}
+.checkpointInputFieldsContainer {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#checkpointTitle {
+    margin-top: 5%;
+}
+#allCheckpointInputFieldsContainer {
+    overflow: auto;
+}
+.addButton {
+    background-color: white;
+    border: 1px solid yellowgreen;
+    border-radius: 10px;
+}
+/*#endregion Create Journey Pop-Up*/
+/*#endregion My Journey Page*/
+
+/*#region Confirmation Pop-Ups*/
+.confimationpopUpBox{
+    align-self:center;
+    border:1px solid yellowgreen;
+    border-radius:10px;
+    height: 150px;
+    width:250px;
+    flex-direction:column;
+    justify-content:space-around;
+    z-index:1;
+    background-color:white;
+    margin:auto;
+    position:absolute;
+}
+
+.confirmationButtonsDiv {
+    display:flex;
+    justify-content:space-around;
+}
+
+.confirmationText{
+    align-self:center;
+    text-align:center;
+}
+
+.confirmButton {
+    margin: 10px 0px;
+    padding: 5px;
+    border: none;
+    width:50px;
+    background: yellowgreen;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+    outline: none;
+    border: 1px solid transparent;
+}
+.confirmButton:hover {
+    background-color: white;
+    border: 1px solid yellowgreen;
+}
+/*#endregion Confirmation Pop-Ups*/
+
+.errorText {
+    text-align:center;
+    margin:0!important;
+}
+
+.detailsTitle{
+    width:100%;
+    margin-left: 0!important;
+    text-align:right;
+}
+
+
+#bookingContainer{
+    display:flex;
+    flex-direction:row;
+    height:85%;
+    justify-content:space-between;
+}
+
+.navText{
+    cursor:pointer;
+}

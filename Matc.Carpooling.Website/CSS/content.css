@@ -1,0 +1,898 @@
+﻿input, button{
+    outline: none;
+    font-family: 'Karla', sans-serif !important;
+}
+
+input::placeholder{
+    font-family: 'Karla', sans-serif !important;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    position: relative;
+}
+
+.white-background{
+    background: white;
+}
+
+.mycontainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 288px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.registerBox {
+    height: 500px;
+}
+
+.container p, .page-link {
+    color: #a1a1a1;
+}
+
+.page-link {
+    cursor: pointer;
+}
+
+#registerInputFields div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.registerInput {
+    margin: 10px 20px !important;
+}
+
+#policy-text {
+    width: 260px;
+    margin: 20px;
+}
+
+.closeButton {
+    float: right;
+    padding: 3px 7px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #fff;
+    color: yellowgreen;
+    border: 2px solid yellowgreen;
+    font-weight: bolder;
+}
+/*#region My Account Page*/
+
+#myAccountContainer {
+    padding-top: 3%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#myAccountOptionsDiv {
+    height: 100px;
+    width: 52.5%;
+    margin: 0 auto;
+}
+
+#detailsDisplayDiv {
+    align-self: center;
+    margin: 0 auto;
+    height: 50%;
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.2);
+    background: white;
+    padding: 25px;
+    overflow: auto;
+    padding-bottom: 15px;
+}
+
+#userDetailsEdit{
+    height: 100%;
+    overflow: auto;
+}
+
+#displayDetails{
+    text-align: center;
+}
+
+.myAccountSelectOptionsDiv {
+    margin-top: 5% !important;
+    background-color: yellowgreen;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    padding-top: 0px;
+    border: 1px solid yellowgreen;
+    border-left: none;
+    padding-right: 5px;
+    text-align: center;
+}
+
+.myAccountSelectOptionsDiv h3 {
+    padding-top: 10px;
+    height: 100%;
+}
+
+
+.myAccountSelectOptionsDiv:active {
+    background-color: rgb(119, 158, 41);
+}
+
+#myDetailsDiv{
+    border-top-left-radius: 5px;
+    border-right: 2px solid rgba(248,248,248,1);
+}
+
+#editDetailsDiv{
+    border-top-right-radius: 5px;
+}
+
+#myJourneysDetailsDiv{
+    border-top-right-radius: 5px;
+}
+
+#myAccountOptionsLabels {
+    display: flex;
+    flex-direction: row;
+    padding-right: 60%;
+}
+
+#myDetailsLabelLink {
+    height: 100%;
+    margin-top: 5px;
+    align-self: center;
+}
+
+#editDetailsLabel{
+    font-weight: bold;
+}
+
+.myAccountSelectOptionsLabel {
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+
+#myAccountOptionsLabels a {
+    margin-top: 20%;
+}
+
+#myAccountOptionsLabels a h3 {
+    margin: 0;
+}
+
+#myAccountOptionsLabels a:hover {
+    cursor: pointer;
+}
+
+#myDetailsLabel {
+    font-weight: bold;
+}
+
+
+
+/*#endregion My Account Page*/
+
+/*#region Home Page */
+
+.tableContainer {
+    justify-content: center;
+    height: 100%;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.table-wrapper {
+    width: 75%;
+    margin: auto;
+    border: none;
+}
+
+.tableHeader {
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: baseline;
+}
+
+#journeysContainer {
+    border-radius: 10px;
+    height: 50%;
+}
+
+#myCarsContainer {
+    margin-top: 0;
+    height: 60%;
+    width : 75%;
+    margin: auto;
+    z-index: 1;
+}
+
+#myCarsContainerTable {
+    height: 90%;
+    border-radius: 10px;
+}
+
+.table-header{
+    font-size: 14px;
+    background : yellowgreen;
+    border-top-left-radius: 10px;
+}
+
+.table-header th {
+    border-bottom: none;
+    line-height: 2.5;
+}
+
+table {
+    border-collapse: collapse;
+    width: 95%;
+    text-align: center;
+    margin: auto;
+}
+
+.table-row {
+    line-height: 2.5;
+    background: white;
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+}
+
+td {
+    text-align: center;
+    padding: 8px;
+}
+
+th {
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding: 8px;
+}
+
+tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+#bookedJourneysContainer {
+    height: 40%;
+    border-radius: 10px;
+}
+
+#bookedHomeTableHeader {
+    height: 13%;
+}
+
+#bookedHomeJourneysTitle {
+    margin-top: 0.8%;
+}
+
+.internalTableContainer {
+    height: 85%;
+    overflow: auto;
+}
+
+.internalTableContainer > table{
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+/*#endregion Home Page */
+
+/*#region My Journeys Page*/
+#bookedMyJourneysContainer {
+    height: 30%;
+}
+
+#createdMyJourneysContainer {
+    height: 50%;
+}
+
+#createdMyJourneysContainerTable {    
+    height: 90%;
+}
+
+#createdJourneysTableHeader {
+    height: 15%;
+}
+
+#createdJourneysTitle {
+    margin-top: 0.9%;
+}
+
+#createJourneyButton{
+    float : right;
+    margin-right: 30px;
+}
+
+/*#endregion My Journeys Page */
+
+
+/*#region Tables Headers*/
+.tableTitle {
+    margin-left: 2%;
+    width: 20%;
+    margin-top: 0.7%;
+}
+
+.search-container {
+    margin-right: 2%;
+    margin-top: 0.7%;
+}
+
+
+.search-container input[type=text] {
+    background-color: rgba(206, 206, 255, 0.1);
+    border: 0.5px solid yellowgreen;
+    font-size: 17px;
+    border-radius: 3px;
+    font: inherit;
+    padding-left: 10px;
+    outline: none;
+    padding: 5px;
+}
+
+.search-container button {
+    background-color: yellowgreen;
+    border-radius: 3px;
+    border: none;
+    font-size: 15px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/*#endregion Tables Headers*/
+
+/*#region Add Button*/
+.createButton {
+    width: 10%;
+    margin-top: 5px;
+    float: right;
+    margin: 10px 0px;
+    font-family: 'Work sans';
+    border: none;
+    background: yellowgreen;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid transparent;
+}
+
+/*#endregion Add Button*/
+
+.popUpBox {
+    float: right;
+    z-index: 1;
+    position: absolute;
+    height: 45%;
+    width: 40%;
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.2);
+    padding: 10px;
+    border-radius: 7px;
+    background: white;
+    align-self: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+.box {
+    width: 288px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#myAccountPopUp {
+    margin-left: 60%;
+    height: 200px;
+    width: 300px;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    border-radius: 10px;
+    border: 1px solid yellowgreen;
+}
+
+#addCarPopUpCloseButton {
+    margin-left: 90%;
+}
+
+#addCarInputFields{
+    justify-content: space-around;
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+}
+
+#addCarTitleFields {
+    justify-content: space-around;
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.activeJourney {
+    color: black;
+}
+
+.inactiveJourney {
+    color: lightgray;
+}
+
+
+
+#userInfoText {
+    margin-top: 10%;
+    margin-left: 5%;
+    align-self: center;
+}
+
+#userInfoText2 {
+    margin-left: 5%;
+    align-self: center;
+}
+
+#myAccountButton {
+    margin-left: 5%;
+    width: 100px;
+    height: 15%;
+    border: none;
+    background: yellowgreen;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid transparent;
+}
+
+#logOutButton {
+    margin-top: 7%;
+    margin-left: 66%;
+    width: 30%;
+    height: 10%;
+    font-family: 'Source Sans Pro', sans-serif;
+    border: none;
+    background: yellowgreen;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid transparent;
+}
+
+.MyAccountpopupButton {
+    margin: 5px 0px;
+    font-family: 'Work sans';
+    border: none;
+    background: rgb(230, 230, 230);
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid transparent;
+}
+
+#logOutDiv {
+    border-top: 1px solid;
+    border-color: yellowgreen;
+}
+
+#myAccountButtonLink {
+    width: 100px;
+    color: black;
+    text-decoration: none;
+}
+
+#logOutButtonLink {
+    width: 100px;
+    color: black;
+    text-decoration: none;
+}
+
+#viewCarPopUpCloseButton {
+    margin-left: 90%;
+}
+
+#viewCarDetailsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#addCarcontainer{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    margin-top: 20px;
+}
+
+.popup-parameter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.popup-parameter .inPageInputFields{
+    height: 35px !important;
+}
+
+.carTitle{
+    width: 144.09px;
+    font-size: 18px;
+}
+
+#createCarButtonDiv {
+    margin-top: 20px;
+}
+
+#createCarButton {
+    width: 30%;
+    align-self: center;
+}
+
+#viewCarButtonsDiv {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#viewCarButtonsDiv .submitButton{
+    padding: 15px 60px;
+}
+
+#carDetailsInfo {
+    margin-left: 20%;
+}
+
+#carDetailsContainer {
+    align-items: center;
+}
+
+#updateCarID {
+    width: 40%;
+    align-self: center;
+}
+
+#updateCarButton {
+    margin-left: 20%;
+}
+
+#detailsContainer {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    justify-content: center;
+}
+
+#detailsTitleContainer {
+    margin-left: 3%;
+    padding-top: 60px;
+}
+
+#detailsInfoContainer {
+    margin-left: 5%;
+    padding-top: 60px;
+}
+
+#fNamediv {
+    margin-left: 30%;
+}
+
+#lNameDiv {
+    margin-left: 31%;
+}
+
+#emailDiv {
+    margin-left: 11.5%;
+}
+
+#phoneDiv {
+    margin-left: 11%;
+}
+
+#ratingDiv {
+    margin-left: 56%;
+}
+
+#DetailsHeaderDiv {
+    margin-left: 3%;
+}
+
+#DetailsborderDiv {
+    border-bottom: 1px solid yellowgreen;
+    height: 8%;
+}
+
+#EditDetailsborderDiv {
+    border-bottom: 1px solid yellowgreen;
+    height: 8%;
+}
+
+#EditDetailsTitleDiv {
+    margin-left: 40%;
+}
+
+#editDetailsTitleContainer, #editPasswordTitleContainer {
+    margin-left: 3%;
+}
+
+#EditdetailsInputFieldsContainer, #EditPasswordInputFieldsContainer {
+    margin-left: 5%;
+}
+
+#editDetailsContainer, #editPasswordContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#firstNameDiv {
+    margin-left: 37%;
+    padding: 30px 0px 0px 0px;
+}
+
+#lastNameDiv {
+    margin-left: 38%;
+    padding: 20px 0px 0px 0px;
+}
+
+#emailAddDiv {
+    margin-left: 21%;
+    padding: 15px 0px 0px 0px;
+}
+
+#phoneNumDiv {
+    margin-left: 17%;
+    padding: 15px 0px 0px 0px;
+}
+
+#passwordDiv {
+    margin-left: 44.5%;
+    
+}
+
+#confirmPasswordDiv {
+    padding: 14px 0px 0px 0px;
+}
+
+#editDetailsInputFields {
+    padding-top: 25px;
+    padding-bottom: 20px;
+    padding-right: 80px;
+}
+
+#confirmButtonDiv, #confirmChangePasswordButtonDiv {
+    align-items: flex-end;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+#createdJourneyDetailsDiv, #BookedJourneyDetailsDiv, #HomeBookedJourneyDetailsDiv, #HomeBookJourneyDetailsDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+}
+
+
+
+#CarDetailsTitleDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+}
+
+#CarDetailsValueDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+}
+
+#CarMakeDiv, #CarModelDiv, #CheckpointNameDetailsDiv, #CheckpointValueDetailsDiv, #BookedJourneyCheckpointNameDetailsDiv, #BookedJourneyCheckpointValueDetailsDiv, #BookedJourneyCarMakeDiv, #BookedJourneyCarModelDiv, #HomeBookedJourneyCheckpointValueDetailsDiv, #HomeBookedJourneyCarMakeDiv, #HomeBookedJourneyCarModelDiv, #HomeBookJourneyCheckpointNameDetailsDiv, #HomeBookJourneyCheckpointValueDetailsDiv, #HomeBookJourneyCarMakeDiv, #HomeBookJourneyCarModelDiv {
+    display: flex;
+    justify-content: center;
+}
+
+#createdJourneyDetailsPopUpCloseButton, #journeyDetailsPopUpCloseButton {
+    margin-right : 15px;
+}
+
+#createdJourneyDetailsContainer, #BookedJourneyDetailsContainer, #HomeBookJourneyDetailsContainer {
+    overflow: auto;
+    height: 90%;
+}
+
+#HomeBookedJourneyDetailsContainer {
+    overflow: auto;
+    height: 90%;
+}
+
+#CarDetailsTitleDiv, #BookedJourneyCarDetailsTitleDiv, #HomeBookedJourneyCarDetailsTitleDiv, #HomeBookJourneyCarDetailsTitleDiv {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 11%;
+}
+
+#CheckpointNameValuesDiv, #BookedJourneyCheckpointNameValuesDiv, #HomeBookedJourneyCheckpointNameValuesDiv, #HomeBookJourneyCheckpointNameValuesDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+    margin-right: 20%;
+}
+
+#bookedJourneyDetailsPopUpCloseButton{
+    margin-left: 90%;
+    width: 30px;
+}
+
+#bookJourneyButton{
+    position: absolute;
+    bottom: 10px;
+    right: 100px;
+    border-radius: 7px;
+    padding: 10px 35px;
+}
+
+#bookedJourneyDetailsPopUp{
+    width: 50%;
+}
+
+#BookedJourneyCarDetailsValueDiv, #HomeBookedJourneyCarDetailsValueDiv, #HomeBookJourneyCarDetailsValueDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+    margin-right: 18%;
+}
+
+#BookedJourneyDetailsValuesDiv, #createdJourneyDetailsValuesDiv, #HomeBookJourneyDetailsValuesDiv {
+    margin-right: 39%;
+}
+
+/*#region update journey UI*/
+#updateJourneyPopUp {
+    width: 65%;
+    height: 75%;
+    border-radius: 20px;
+}
+
+#updateJourneyDiv {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+#updateJourneyPopUpCloseButton{
+    margin-left: 90%;
+}
+
+#updateJourneyInputFieldsDiv {
+    height: 90%;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+.updateJourneyInputFieldsTitle {
+    text-align: left;
+}
+
+.updateJourneyInPageInputFields {
+    background-color: rgba(206, 206, 255, 0.1);
+    border: 0.5px solid yellowgreen;
+    font-size: 17px;
+    border-radius: 3px;
+    font: inherit;
+    padding-left: 10px;
+}
+
+#updateJourneyDetailsInputFields {
+    background-color: white;
+    height: 90%;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#updateJourneyDetailsInputFieldsTitleDiv, #updateJourneyDetailsInputFieldsDiv {
+    height: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#dateSelectDropBox {
+    width: 75%;
+}
+
+#carSelectDropBox {
+    width: 80%;
+}
+
+#updateJourneyCheckpointDetailsInputFields {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: white;
+    height: 90%;
+    width: 30%;
+    margin: auto;
+}
+
+#updateJourneyCheckpointTitle {
+    margin-top: 5%;
+}
+
+#updateJourneyAllCheckpointInputFieldsContainer {
+    overflow: auto;
+}
+
+.updateJourneyCheckpointInputFieldsContainer {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.addCheckpointButton {
+    background-color: white;
+    border: 1px solid yellowgreen;
+    border-radius: 10px;
+}
+
+#submitUpdateJourneyButton {
+    width: 30%;
+    align-self: center;
+}
+
+.submitButton {
+    margin: 10px 0px;
+    font-size: 14px;
+    padding: 15px;
+    border: none;
+    background: yellowgreen;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    border: 2px solid transparent;
+    transition: ease;
+    transition-duration: 0.4s;
+}
+
+.submitButton:hover {
+    box-shadow: 0px 5px 40px -10px rgba(154,205,50,1);
+}
+
+#addCarButton{
+    float: right;
+    padding: 15px 30px;
+    margin-right: 40px;
+}
+/*#endregion*/
+#BookedJourneyDetailsTitleDiv {
+    text-align: right;
+}

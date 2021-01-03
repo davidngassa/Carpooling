@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainMaster.master.cs" Inherits="Matc.Carpooling.Website.MainMaster" %>
+<!DOCTYPE html>  
+  
+<html>  
+<head runat="server">  
+    
+    <title>Carpooling by Powa Panzer</title>  
+    <link href="css/master.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/content.css" rel="stylesheet" />
+    <link href="CSS/test.css" rel="stylesheet" />
+    <link href="Png-Images/favicon.png" rel="shortcut icon" type="image/png" />
+    <script src="/Scripts/jquery-3.4.1.js"></script>
+    <script src="/Scripts/mainScript.js"></script>
+    <asp:ContentPlaceHolder ID="cphHead" runat="server">  
+    </asp:ContentPlaceHolder>  
+</head>  
+<body>  
+   
+    <header id="header">
+       
+        <a id="logo">Powa Panzer</a>
+       
+        <nav style="display:none;" id="nav">  
+            <ul>  
+                <li><a id ="navHelloText" class="navText" onclick="popUpMyAccount();">Hello</a></li>  
+                <li><a id ="navHomeText" class="navText" href="Home.aspx">Home</a></li>
+                <li><a id ="navMyCarsText" class="navText" href="MyCars.aspx">Cars</a></li>  
+                <li><a id ="navMyJourneysText" class="navText" href="My Journeys.aspx">Journeys</a></li>  
+            </ul>  
+        </nav>
+      
+    </header>  
+    
+    <div id="myAccountPopUp" style="display: none;">
+        <button class="closeButton" onclick="closePopUpMyAccount();" style="margin-right: 5%; margin-top:3%">X</button>
+        <p id="userInfoText"></p>
+        <p id="userInfoText2"></p>
+        <button id="myAccountButton" class="MyAccountpopupButton" onclick="window.location.href = 'MyAccount.aspx';">My Account</button>
+        <div id="logOutDiv">
+            <button id="logOutButton" class="MyAccountpopupButton" onclick="LogOut()">Log out</button>
+        </div>
+    </div> 
+    <div id="content">  
+        <asp:ContentPlaceHolder ID="cphFirst" runat="server">  
+          
+        </asp:ContentPlaceHolder>  
+    </div>  
+   
+    <footer id="footer">
+        Copyright &copy Powa Panzer Services (Mauritius) Ltd
+    </footer> 
+     
+    <script>
+        function popUpMyAccount() {
+            document.getElementById("navHelloText").style.fontWeight = "bold"
+            document.getElementById("myAccountPopUp").style.display = "block"
+            document.body.style.backgroundColor = "rgba(206, 206, 206, 1)"
+        }
+        function closePopUpMyAccount() {
+            document.getElementById("navHelloText").style.fontWeight = "lighter"
+            document.getElementById("myAccountPopUp").style.display = "none"
+            document.body.style.backgroundColor = "white"
+        }
+    </script>
+
+</body>   
+</html>
